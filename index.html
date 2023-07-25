@@ -4,11 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit-Brust</title>
-    <!-- Google fonts -->
+    <!-- Google fonts  lato-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Daisy ui and tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwind confige-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#F85559",
+              secondary: "rgba(18, 18, 18, 0.6)",
+              headingColor:"#121212"
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <h1>hello tailwind</h1>
+  <body class="font-lato">
+    <!-- Header part -->
+    <header>
+      <nav></nav>
+      <!-- Banner Part -->
+    </header>
+    <!-- Main part -->
+    <main>
+      <section></section>
+    </main>
+    <!-- footer part -->
+    <footer></footer>
   </body>
 </html>
