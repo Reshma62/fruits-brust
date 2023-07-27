@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit-Brust</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
     <!-- Google fonts  lato-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,10 +52,20 @@
         <div class="navbar lg:py-2 xl:py-8 lg:px-4 xl:px-12 justify-between">
           <div class="navbar-start hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-              <li><a class="text-lg text-white">Home</a></li>
-              <li><a class="text-lg text-white">About Us</a></li>
-              <li><a class="text-lg text-white">Shop</a></li>
-              <li><a class="text-lg text-white">All Fruits</a></li>
+              <li>
+                <a class="text-lg hover:bg-transparent text-white">Home</a>
+              </li>
+              <li>
+                <a class="text-lg hover:bg-transparent text-white">About Us</a>
+              </li>
+              <li>
+                <a class="text-lg hover:bg-transparent text-white">Shop</a>
+              </li>
+              <li>
+                <a class="text-lg hover:bg-transparent text-white"
+                  >All Fruits</a
+                >
+              </li>
             </ul>
           </div>
           <div class="navbar-center">
@@ -91,7 +102,7 @@
                 </svg>
               </button>
             </div>
-            <div class="dropdown lg:hidden">
+            <div class="dropdown z-50 lg:hidden">
               <label tabindex="0" class="btn btn-ghost btn-circle">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -109,11 +120,24 @@
               </label>
               <ul
                 tabindex="0"
-                class="menu menu-sm right-0 dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box w-52 p-5"
+                class="menu menu-sm right-0 bg-headingColor dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box w-52 p-5"
               >
-                <li><a>Homepage</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>About</a></li>
+                <li>
+                  <a class="text-lg hover:text-slate-200 text-white">Home</a>
+                </li>
+                <li>
+                  <a class="text-lg hover:text-slate-200 text-white"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a class="text-lg hover:text-slate-200 text-white">Shop</a>
+                </li>
+                <li>
+                  <a class="text-lg hover:text-slate-200 text-white"
+                    >All Fruits</a
+                  >
+                </li>
                 <div class="form-control relative w-full mt-2">
                   <input
                     type="text"
@@ -389,7 +413,7 @@
         </div>
         <!-- card -->
         <div
-          class="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 text-center gap-6 mt-12"
+          class="grid lg:grid-cols-2 xl:grid-cols-4 grid-cols-1 text-center gap-6 mt-12"
         >
           <!-- card 1 -->
           <div
@@ -1068,7 +1092,7 @@
             </div>
           </div>
         </div>
-        <div class="text-center mt-6">
+        <div class="text-center mt-6 md:mt-12">
           <button
             class="bg-primary py-2 px-5 md:py-5 md:px-8 rounded-lg text-white text-sm md:text-xl md:font-extrabold inline-block text-center"
           >
@@ -1099,7 +1123,7 @@
               </p>
             </div>
             <div
-              class="grid grid-flow-row md:grid-flow-col justify-items-center lg:max-w-[1200px] mx-auto lg:mt-12 mt-5 md:mt-6 gap-y-6 md:gap-0"
+              class="grid grid-flow-row lg:grid-flow-col justify-items-center lg:max-w-[1200px] mx-auto lg:mt-12 mt-5 md:mt-6 gap-y-6 lg:gap-0"
             >
               <div class="text-center">
                 <img
@@ -1284,13 +1308,13 @@
           </div>
           <!-- center -->
           <div class="order-1 lg:order-2">
-            <img src="images/whychoose1.png" alt="" class="mx-auto" />
+            <img src="images/whychoose1.png" alt="" class="mx-auto h-full object-cover rounded-lg" />
           </div>
           <!-- right side -->
           <div class="order-3 lg:order-3">
             <!-- one -->
             <div
-              class="flex lg:flex-row-reverse flex-col md:flex-row  md:items-start items-center gap-6"
+              class="flex lg:flex-row-reverse flex-col md:flex-row md:items-start items-center gap-6"
             >
               <div
                 class="flex justify-center items-center bg-headingColor/10 rounded-full w-6 h-6 p-7"
@@ -1314,7 +1338,7 @@
             </div>
             <!-- two -->
             <div
-              class="mt-6 md:mt-12 flex lg:flex-row-reverse flex-col md:flex-row  md:items-start items-center gap-6"
+              class="mt-6 md:mt-12 flex lg:flex-row-reverse flex-col md:flex-row md:items-start items-center gap-6"
             >
               <div
                 class="flex justify-center items-center bg-headingColor/10 rounded-full w-6 h-6 p-7"
@@ -1345,7 +1369,7 @@
               >
                 <i class="fa-regular fa-thumbs-up"></i>
               </div>
-              <div class="text-center md:text-left  lg:text-right">
+              <div class="text-center md:text-left lg:text-right">
                 <h3 class="font-extrabold text-headingColor text-2xl">
                   The Benefits Only
                 </h3>
@@ -1377,21 +1401,41 @@
           Fruit Burst
         </h2>
       </div>
-      <div class="flex flex-wrap items-center justify-center gap-10 md:gap-[60px]">
+      <div
+        class="flex flex-wrap items-center justify-center gap-10 md:gap-[60px]"
+      >
         <a class="link text-sm md:text-lg font-semibold no-underline">Home</a>
-        <a class="link text-sm md:text-lg font-semibold no-underline">About us</a>
+        <a class="link text-sm md:text-lg font-semibold no-underline"
+          >About us</a
+        >
         <a class="link text-sm md:text-lg font-semibold no-underline">Shop</a>
-        <a class="link text-sm md:text-lg font-semibold no-underline">All Fruits</a>
-        <a class="link text-sm md:text-lg font-semibold no-underline">Support</a>
-        <a class="link text-sm md:text-lg font-semibold no-underline">My Account</a>
+        <a class="link text-sm md:text-lg font-semibold no-underline"
+          >All Fruits</a
+        >
+        <a class="link text-sm md:text-lg font-semibold no-underline"
+          >Support</a
+        >
+        <a class="link text-sm md:text-lg font-semibold no-underline"
+          >My Account</a
+        >
       </div>
       <div>
         <div class="flex flex-wrap items-center justify-center gap-6 md:gap-10">
-          <a class="text-2xl md:text-4xl"><i class="fa-brands fa-twitter"></i></a>
-          <a class="text-2xl md:text-4xl"><i class="fa-brands fa-facebook"></i></a>
-          <a class="text-2xl md:text-4xl"><i class="fa-brands fa-youtube"></i></a>
-          <a class="text-2xl md:text-4xl"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a class="text-2xl md:text-4xl"><i class="fa-brands fa-instagram"></i></a>
+          <a class="text-2xl md:text-4xl"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a class="text-2xl md:text-4xl"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a class="text-2xl md:text-4xl"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a class="text-2xl md:text-4xl"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a class="text-2xl md:text-4xl"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
           <a class="text-2xl md:text-4xl"><i class="fa-brands fa-apple"></i></a>
         </div>
       </div>
